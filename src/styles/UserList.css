@@ -1,0 +1,39 @@
+.userlist-container {
+  padding: 2rem;
+  background: #f1f5f9;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.userlist-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.user-table tr:hover {
+  background-color: #eef2ff;
+}

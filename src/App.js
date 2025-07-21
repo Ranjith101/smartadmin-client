@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginForm from './components/LoginForm';
-import UserList from './components/UserList';
 import UserForm from './components/UserForm';
+import ConfigurableList from './components/UserList';
+import UserView from './components/UserView';
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginForm />} />
         <Route path="/create" element={<UserForm />} />
-        <Route path="/users" element={<UserList />} />
+        <Route path="/users" element={<ConfigurableList tableName="user" />} />
+        <Route path="/edit-user/:id" element={<UserForm />} />
+        <Route path="/view-user/:id" element={<UserForm />} />
       </Routes>
     </Router>
   );
